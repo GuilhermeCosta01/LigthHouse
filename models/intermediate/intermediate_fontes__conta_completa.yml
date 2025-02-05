@@ -1,0 +1,45 @@
+models:
+  - name: intermediate_fontes__conta_completa
+    description: Uma dimensão que une as principais caracteristicas das contas cadastradas no BanVic
+    columns:
+      - name: pk_conta
+        description: Chave primária da conta.
+        data_tests:
+          - unique
+          - not_null
+              
+      - name: fk_cliente
+        description: Chave secundária de clientes.
+
+      - name: fk_agencia
+        description: Chave secundária de agencia.
+
+      - name: fk_colaborador
+        description: Chave secundária de colaborador.
+
+      - name: tipo_de_conta
+        description: uma rapida descrição do tipo de conta.
+
+      - name: data_abertura_conta
+        description: Data da abertura em que a conta foi cadastrada.
+
+      - name: saldo_total_conta
+        description: Saldo total da conta.
+
+      - name: saldo_disponivel_conta
+        description: Saldo disponivel para saque na conta.
+
+      - name: data_ultimo_lancamento_conta
+        description: Data do ultimo lançamento de valores na conta.
+
+      - name: nome_agencia
+        description: Nome da agencia.
+
+      - name: estado_agencia
+        description: Estado.
+
+      - name: nome_cliente
+        description: Nome do Cliente.
+
+      - name: nome_colaborador
+        description: Nome do Colaborador do BanVic.

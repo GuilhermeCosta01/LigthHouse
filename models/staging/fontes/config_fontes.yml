@@ -1,0 +1,32 @@
+sources:
+  - name: fontes
+    description: Sistema de análise do BanVic.
+    schema: Schema
+    tables:
+      - name: agencia
+        columns:
+          - name: cod_agencia
+            data_tests:
+              - unique
+              - not_null
+                      
+      - name: clientes
+        columns:
+          - name: cod_cliente
+            data_tests:
+              - unique
+              - not_null
+                      
+      - name: contas
+        columns:
+          - name: num_conta
+            data_tests:
+              - unique
+              - not_null 
+
+      - name: colaboradores
+        columns:
+          - name: cod_colaborador
+            data_tests:
+              - unique
+              - not_null 

@@ -1,0 +1,44 @@
+models:
+  - name: dim_data_transacoes
+    description: Dimensão final que é responsável por todas as transações de contas no BanVic
+    columns:
+      - name: pk_cod_transacao
+        description: Chave primária com o código da transação.
+
+      - name: fk_num_conta
+        description: Chave secundária com o número da conta.
+
+      - name: data_transacao
+        description: Data da transação.
+
+      - name: trimestre
+        description: Trimestre em que a transação foi feita.
+
+      - name: nome_transacao
+        description: Nome da transação.
+
+      - name: nome_cliente
+        description: Nome do cliente.
+
+      - name: nome_colaborador
+        description: Nome do colaborador.
+
+      - name: valor_transacao
+        description: Valor da transação.
+
+      - name: valor_transacao_sem_sinal
+        description: Valor da transação sem o sinal.
+
+      - name: nome_mes
+        description: Nome escrito do mês.
+
+      - name: mes_com_r
+        description: Condição onde é verificado se o mês possui algum "R".
+
+      - name: nome_agencia
+        description: Nome da agencia.
+
+      - name: estado_agencia
+        description: Estado da agencia.
+
+     

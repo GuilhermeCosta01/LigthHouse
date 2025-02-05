@@ -1,0 +1,55 @@
+models:
+  - name: intermediate_fontes__prop_credito
+    description: Dimensão intermediária que é responsável por apresentar as propostas de crédito no BanVic
+    columns:
+      
+      - name: pk_cod_proposta
+        description: Chave primária das propostas.
+            
+      - name: fk_cliente_cred
+        description: Chave secundária do cliente.
+
+      - name: fk_colaborador_cred
+        description: Chave secundária do colaborador.
+
+      - name: data_entrada_proposta
+        description: Data em que a proposta foi feita.
+ 
+      - name: trimestre
+        description: Em qual trimstre foi realizado a proposta.
+
+      - name: taxa_juros_mensal
+        description: Taxa de juros diante da proposta de crédito.
+
+      - name: valor_proposta
+        description: Valor da proposta.
+
+      - name: valor_financiamento
+        description: Valor do financiamento.
+
+      - name: valor_entrada
+        description: Valor da entrada.
+
+      - name: valor_prestacao
+        description: Valor da prestação.
+
+      - name: quantidade_parcelas
+        description: Quantidade de parcelas.
+
+      - name: valor_total_parcelas
+        description: Valor multiplicado de todas as parcelas.
+
+      - name: valor_total_com_entrada
+        description: Valor total com a entrada inclusa.
+
+      - name: carencia
+        description: Tempo de inicio para pagamento.
+
+      - name: status_proposta
+        description: Status da proposta.
+
+      - name: nome_cliente
+        description: Nome do cliente.
+
+      - name: nome_colaborador
+        description: Nome do colaborador.
